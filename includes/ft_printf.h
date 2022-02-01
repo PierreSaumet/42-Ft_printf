@@ -163,7 +163,6 @@ void				ft_init_t_tmp(t_tmp *val);
 void				ft_putchar(char c, t_data data);
 void				ft_putstr(char *str, t_data data);
 int					ft_isdigit(int c);
-int					ft_isalpha(int c);
 int					ft_turbo_atoi(const char **str);
 
 /*
