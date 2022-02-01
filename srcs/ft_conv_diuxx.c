@@ -18,10 +18,9 @@
 **	- 'ft_check_qual' used for 'l' and 'h'.
 **	- 'ft_dui' used for '%d/u/i' check the width, prec, etc.
 **	- 'ft_xx' used for'%x/X' check the width, prec, etc.
-**	- 'ft_f' used for '%f' check the qual, etc.
 */
 
-unsigned long		ft_check_qual(t_data data, va_list args)
+static unsigned long	ft_check_qual(t_data data, va_list args)
 {
 	unsigned long num;
 
@@ -50,6 +49,7 @@ void				ft_dui(const char *fmt, t_data data, va_list args)
 		*data.pt_flags |= SIGN;
 	num = ft_check_qual(data, args);
 	ft_numberx(num, 10, data);
+	return ;
 }
 
 void				ft_xx(const char *fmt, t_data data, va_list args)
@@ -61,10 +61,5 @@ void				ft_xx(const char *fmt, t_data data, va_list args)
 		*data.pt_flags |= SMALL;
 	num = ft_check_qual(data, args);
 	ft_numberxa(num, 16, data);
-}
-
-void				ft_f(t_data data, va_list args)
-{
-	(void)data;
-	(void)args;
+	return ;
 }

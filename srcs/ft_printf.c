@@ -44,8 +44,6 @@ static const char	*ft_conversion(const char *fmt, va_list args, t_data data)
 		ft_dui(fmt, data, args);
 	else if (*fmt == 'x' || *fmt == 'X')
 		ft_xx(fmt, data, args);
-	else if (*fmt == 'f')
-		ft_f(data, args);
 	else
 	{
 		if (*fmt)

@@ -108,10 +108,8 @@ void				ft_s(t_data data, va_list args);
 /*
 **	Functions from 'ft_conv_diuxx.c'
 */
-unsigned long		ft_check_qual(t_data data, va_list args);
 void				ft_dui(const char *fmt, t_data data, va_list args);
 void				ft_xx(const char *fmt, t_data data, va_list args);
-void				ft_f(t_data data, va_list args);
 
 /*
 **	Functions from 'ft_convone.c'
