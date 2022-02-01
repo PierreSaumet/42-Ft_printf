@@ -13,12 +13,11 @@
 #include "../includes/ft_printf.h"
 
 /*
-**	This file contains 2 functions to calculate the len of a string
-**	ft_strlen and ft_strnlen (more informations, go see the man).
+**	This file contains 1 function to calculate the len of a string
+**	ft_strlen (more informations, go see the man).
 **	And 2 other functions one making a division and the second the
 **	modulo. They are used to get a string from va_arg.
 **	- 'ft_strlen' return the lengh of a string.
-**	- 'ft_strnlen' return the lengh of a string with a lenmax.
 **	- 'ft_do_div' return the division of two variables.
 **	- 'ft_do_mod' return the modulo of two variables.
 */
