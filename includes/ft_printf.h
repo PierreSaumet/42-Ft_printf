@@ -129,7 +129,6 @@ void				ft_elseif(t_data data, const char *s, char c, int len);
 **	Functions from 'ft_convtwo.c'
 */
 void				ft_swidth(t_data data, const char *s, char c, int len);
-void				ft_sselsesif(t_data data, const char *s, char c, int len);
 void				ft_sselses(t_data data, const char *s, char c, int len);
 void				ft_sselseleftprec(t_data data, const char *s, char c,
 						int len);

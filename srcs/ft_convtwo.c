@@ -12,6 +12,10 @@
 
 #include "../includes/ft_printf.h"
 
+/*
+**	Need comemntaries
+*/
+
 void				ft_swidth(t_data data, const char *s, char c, int len)
 {
 	int				i;
@@ -33,9 +37,10 @@ void				ft_swidth(t_data data, const char *s, char c, int len)
 	}
 	else if (*data.pt_width > len)
 		ft_swif(data, s, c, len);
+	return ;
 }
 
-void				ft_sselsesif(t_data data, const char *s, char c, int len)
+static void			ft_sselsesif(t_data data, const char *s, char c, int len)
 {
 	int				i;
 
@@ -53,6 +58,7 @@ void				ft_sselsesif(t_data data, const char *s, char c, int len)
 	{
 		ft_selss(data, s, c, len);
 	}
+	return ;
 }
 
 void				ft_sselses(t_data data, const char *s, char c, int len)
@@ -72,6 +78,7 @@ void				ft_sselses(t_data data, const char *s, char c, int len)
 	{
 		ft_sselsesif(data, s, c, len);
 	}
+	return ;
 }
 
 void				ft_sselseleftprec(t_data data, const char *s, char c,
@@ -98,6 +105,7 @@ void				ft_sselseleftprec(t_data data, const char *s, char c,
 			i++;
 		}
 	}
+	return ;
 }
 
 void				ft_sselselefte(t_data data, const char *s, char c)
@@ -117,4 +125,5 @@ void				ft_sselselefte(t_data data, const char *s, char c)
 		ft_putchar(c, data);
 		i++;
 	}
+	return ;
 }
