@@ -12,6 +12,28 @@
 
 #include "../includes/ft_printf.h"
 
+/*
+**	NEED COMMENTARIES
+*/
+
+void				ft_elseiflen(t_data data, const char *s, int i, int len)
+{
+	if (*data.pt_prec == 0 && -*data.pt_prec2 == len)
+	{
+		ft_putstr((char *)s, data);
+	}
+	else
+	{
+		while (i < *data.pt_prec)
+		{
+			ft_putchar(*(char *)s, data);
+			i++;
+			s++;
+		}
+	}
+	return ;
+}
+
 void				ft_elseif(t_data data, const char *s, char c, int len)
 {
 	int				i;
@@ -30,6 +52,7 @@ void				ft_elseif(t_data data, const char *s, char c, int len)
 	}
 	else
 		ft_putstr((char *)s, data);
+	return ;
 }
 
 void				ft_sselseleft(t_data data, const char *s, char c, int len)
@@ -53,21 +76,5 @@ void				ft_sselseleft(t_data data, const char *s, char c, int len)
 		else
 			ft_sselselefte(data, s, c);
 	}
-}
-
-void				ft_elseiflen(t_data data, const char *s, int i, int len)
-{
-	if (*data.pt_prec == 0 && -*data.pt_prec2 == len)
-	{
-		ft_putstr((char *)s, data);
-	}
-	else
-	{
-		while (i < *data.pt_prec)
-		{
-			ft_putchar(*(char *)s, data);
-			i++;
-			s++;
-		}
-	}
+	return ;
 }
