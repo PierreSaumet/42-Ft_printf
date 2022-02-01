@@ -156,7 +156,6 @@ const char			*ft_qual(const char *fmt, int *pt_qual);
 */
 void				ft_init_t_data(t_data *val);
 void				ft_init_t_tmp(t_tmp *val);
-void				ft_init_t(t_data *val);
 
 /*
 **	Functions from 'ft_libt.c'

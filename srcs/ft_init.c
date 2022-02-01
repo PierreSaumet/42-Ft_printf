@@ -13,7 +13,7 @@
 #include "../includes/ft_printf.h"
 
 /*
-**	This file contains the functions to initialize the structures.
+**	This file contains 2 functions to initialize the structures.
 */
 
 void	ft_init_t_data(t_data *val)
@@ -28,20 +28,6 @@ void	ft_init_t_data(t_data *val)
 	val->pt_qual = &val->qual;
 	val->count = 0;
 	val->pt_count = &val->count;
-	val->prec2 = 0;
-	val->pt_prec2 = &val->prec2;
-}
-
-void	ft_init_t(t_data *val)
-{
-	val->flags = 0;
-	val->pt_flags = &val->flags;
-	val->width = 0;
-	val->pt_width = &val->width;
-	val->prec = 0;
-	val->pt_prec = &val->prec;
-	val->qual = 0;
-	val->pt_qual = &val->qual;
 	val->prec2 = 0;
 	val->pt_prec2 = &val->prec2;
 }

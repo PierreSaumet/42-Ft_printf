@@ -63,7 +63,7 @@ static int		ft_lst_printf(t_data data, const char *fmt, va_list args)
 	{
 		if (*fmt != '%')
 		{
-			ft_init_t(&data);
+			ft_init_t_data(&data);
 			ft_putchar((char)*fmt, data);
 			fmt++;
 			continue;
