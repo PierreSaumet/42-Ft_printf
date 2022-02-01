@@ -55,6 +55,7 @@ void				ft_swif(t_data data, const char *s, char c, int len)
 		i++;
 	}
 	ft_putstr((char *)s, data);
+	return ;
 }
 
 void				ft_selss(t_data data, const char *s, char c, int len)
@@ -75,6 +76,7 @@ void				ft_selss(t_data data, const char *s, char c, int len)
 		i++;
 		s++;
 	}
+	return ;
 }
 
 void				ft_ssdisplay(t_data data, const char *s, int i)
@@ -85,4 +87,5 @@ void				ft_ssdisplay(t_data data, const char *s, int i)
 		i++;
 		s++;
 	}
+	return ;
 }

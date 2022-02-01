@@ -30,6 +30,7 @@ void	ft_init_t_data(t_data *val)
 	val->pt_count = &val->count;
 	val->prec2 = 0;
 	val->pt_prec2 = &val->prec2;
+	return ;
 }
 
 void	ft_init_t_tmp(t_tmp *val)
@@ -41,4 +42,5 @@ void	ft_init_t_tmp(t_tmp *val)
 	val->pt_i = &val->i;
 	val->res = 0;
 	val->pt_res = &val->res;
+	return ;
 }
