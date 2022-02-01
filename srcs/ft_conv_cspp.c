@@ -12,16 +12,6 @@
 
 #include "../includes/ft_printf.h"
 
-/*
-**	This file is the first part of all the possible conversion.
-**	You will find the conversion for 'c', 's', 'p' and '%'.
-**	- 'ft_pourcentage' used for '%'.
-**	- 'ft_c' used for '%c'.
-**	- 'ft_end_c' used to printf the string from '%s'.
-**	- 'ft_s' used for '%s'.
-**	- 'ft_p' used for '%p' and used the functions with a p at the end.
-*/
-
 static void			ft_ssprecelse(t_data data, const char *s, char c, int len)
 {
 	int				i;

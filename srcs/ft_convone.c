@@ -12,7 +12,17 @@
 
 #include "../includes/ft_printf.h"
 
-void				ft_pourcentagewidth(t_data data, char c)
+/*
+**	This file is the first part of all the possible conversion.
+**	You will find the conversion for 'c', 's', 'p' and '%'.
+**	- 'ft_pourcentage' used for '%'.
+**	- 'ft_c' used for '%c'.
+**	- 'ft_end_c' used to printf the string from '%s'.
+**	- 'ft_s' used for '%s'.
+**	- 'ft_p' used for '%p' and used the functions with a p at the end.
+*/
+
+static void			ft_pourcentagewidth(t_data data, char c)
 {
 	if (*data.pt_flags & LEFT)
 	{
@@ -32,6 +42,7 @@ void				ft_pourcentagewidth(t_data data, char c)
 		}
 		ft_putchar('%', data);
 	}
+	return ;
 }
 
 const char			*ft_pourcentage(const char *fmt, t_data data)
@@ -51,13 +62,14 @@ const char			*ft_pourcentage(const char *fmt, t_data data)
 	return (fmt);
 }
 
-void				ft_displayc(t_data data)
+static void			ft_displayc(t_data data)
 {
 	while (*data.pt_width > 1)
 	{
 		ft_putchar(' ', data);
 		*data.pt_width -= 1;
 	}
+	return ;
 }
 
 void				ft_c(t_data data, va_list args)
@@ -86,6 +98,7 @@ void				ft_c(t_data data, va_list args)
 	}
 	else
 		ft_putchar((char)va_arg(args, int), data);
+	return ;
 }
 
 void				ft_sprec(t_data data, const char *s, int i, int len)
@@ -101,4 +114,5 @@ void				ft_sprec(t_data data, const char *s, int i, int len)
 			s++;
 		}
 	}
+	return ;
 }

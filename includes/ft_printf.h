@@ -114,9 +114,9 @@ void				ft_xx(const char *fmt, t_data data, va_list args);
 /*
 **	Functions from 'ft_convone.c'
 */
-void				ft_pourcentagewidth(t_data data, char c);
+//void				ft_pourcentagewidth(t_data data, char c);
 const char			*ft_pourcentage(const char *fmt, t_data data);
-void				ft_displayc(t_data data);
+// void				ft_displayc(t_data data);
 void				ft_c(t_data data, va_list args);
 void				ft_sprec(t_data data, const char *s, int i, int len);
 
