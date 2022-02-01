@@ -22,7 +22,7 @@
 **	- 'ft_p' used for '%p' and used the functions with a p at the end.
 */
 
-void				ft_ssprecelse(t_data data, const char *s, char c, int len)
+static void			ft_ssprecelse(t_data data, const char *s, char c, int len)
 {
 	int				i;
 
@@ -45,9 +45,10 @@ void				ft_ssprecelse(t_data data, const char *s, char c, int len)
 		}
 		ft_putstr((char *)s, data);
 	}
+	return ;
 }
 
-void				ft_ss(t_data data, const char *s, char c, int len)
+static void			ft_ss(t_data data, const char *s, char c, int len)
 {
 	int				i;
 
@@ -68,18 +69,20 @@ void				ft_ss(t_data data, const char *s, char c, int len)
 		else
 			ft_sselses(data, s, c, len);
 	}
+	return ;
 }
 
-void				ft_snull(t_data data, int i, char c)
+static void			ft_snull(t_data data, int i, char c)
 {
 	while (i < *data.pt_width)
 	{
 		ft_putchar(c, data);
 		i++;
 	}
+	return ;
 }
 
-void				ft_selseif(t_data data, const char *s, char c, int len)
+static void			ft_selseif(t_data data, const char *s, char c, int len)
 {
 	int				i;
 
@@ -92,6 +95,7 @@ void				ft_selseif(t_data data, const char *s, char c, int len)
 		ft_swidth(data, s, c, len);
 	else
 		ft_ss(data, s, c, len);
+	return ;
 }
 
 void				ft_s(t_data data, va_list args)
@@ -114,4 +118,5 @@ void				ft_s(t_data data, va_list args)
 		ft_snull(data, i, c);
 	else if (len > 0)
 		ft_selseif(data, s, c, len);
+	return ;
 }

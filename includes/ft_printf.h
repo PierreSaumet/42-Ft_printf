@@ -104,10 +104,6 @@ long int			ft_do_mod(unsigned long n, unsigned base);
 **	Functions from 'ft_conv_cspp.c'
 */
 void				ft_s(t_data data, va_list args);
-void				ft_selseif(t_data data, const char *s, char c, int len);
-void				ft_snull(t_data data, int i, char c);
-void				ft_ss(t_data data, const char *s, char c, int len);
-void				ft_ssprecelse(t_data data, const char *s, char c, int len);
 
 /*
 **	Functions from 'ft_conv_diuxx.c'
