@@ -21,7 +21,7 @@
 **	- 'ft_conversion' find the symbol of conversion.
 */
 
-const char		*ft_preview(t_data data, const char *fmt, va_list args)
+static const char	*ft_preview(t_data data, const char *fmt, va_list args)
 {
 	fmt = ft_flags(fmt, data);
 	fmt = ft_width(fmt, args, data);
@@ -30,7 +30,7 @@ const char		*ft_preview(t_data data, const char *fmt, va_list args)
 	return (fmt);
 }
 
-const char		*ft_conversion(const char *fmt, va_list args, t_data data)
+static const char	*ft_conversion(const char *fmt, va_list args, t_data data)
 {
 	if (*fmt == 'c')
 		ft_c(data, args);
@@ -57,7 +57,7 @@ const char		*ft_conversion(const char *fmt, va_list args, t_data data)
 	return (fmt);
 }
 
-int				ft_lst_printf(t_data data, const char *fmt, va_list args)
+static int		ft_lst_printf(t_data data, const char *fmt, va_list args)
 {
 	while (*fmt)
 	{

@@ -266,8 +266,5 @@ void				ft_digits_p(long args, int base, t_data data, t_tmp tmp);
 **	Functions from 'ft_printf.c'
 */
 int					ft_printf(const char *fmt, ...);
-int					ft_lst_printf(t_data data, const char *fmt, va_list args);
-const char			*ft_conversion(const char *fmt, va_list args, t_data data);
-const char			*ft_preview(t_data data, const char *fmt, va_list args);
 
 #endif
