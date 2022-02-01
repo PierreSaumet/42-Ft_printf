@@ -96,8 +96,7 @@ typedef struct		s_tmp
 /*
 **	Functions from 'ft_calculs.c'
 */
-int					ft_strlen(const char *s);
-int					ft_strnlen(const char *s, int lenmax);
+int					ft_strlen(const char *str);
 long int			ft_do_div(unsigned long n, unsigned base);
 long int			ft_do_mod(unsigned long n, unsigned base);
 
