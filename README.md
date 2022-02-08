@@ -11,6 +11,7 @@ We must implement the following conversions:
 
 ###	What have I learned?
 >Managing multiple files.
+
 >Use of "ar" in the Makefile, and the purpose of it.
 >Variadic function
 >Data structure.
