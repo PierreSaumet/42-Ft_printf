@@ -83,4 +83,8 @@ int		main( void )
 	 ./a.out
 ```
 
-> It will display :
+>	It will display :
+
+_add gif_
+
+>	Or you can use my main.c =)
