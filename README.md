@@ -36,8 +36,51 @@ Also, not wishing to use "malloc" to avoir potential memory leaks, my code is no
 # (min to pass = 100%)
 ```
 
-
 ## Installation
+_Follow these instructions to install the project._
 
+1.	Clone the repository
+	```sh
+	https://github.com/PierreSaumet/42-Ft_printf.git
+	```
+2.	Compile the project.
+	```sh
+	make
+	```
+
+Well done, you have created a static library: libftprintf.a
 
 ## Usage
+_Create a main.c for example:_
+
+Say- C language
+```
+#include <stdio.h>
+#include "includes/ft_printf.h"
+
+int		main( void )
+{
+	char	*str;
+
+	str = "Hello World!";
+	ft_printf("The string 'str' contains: %s\n", str);
+	printf("The string 'str' contains: %s\n", str);
+
+	ft_printf("The number is: %d\n", 1052 + 955212174 - 485745);
+	printf("The number is: %d\n", 1052 + 955212174 - 485745);
+	
+	return (0);
+}
+```
+
+>	Compile yout program
+```sh
+	gcc main.c -L. -lftprintf
+```
+
+>	Run it
+```sh
+	 ./a.out
+```
+
+> It will display :
