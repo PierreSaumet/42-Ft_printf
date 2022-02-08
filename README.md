@@ -13,8 +13,11 @@ We must implement the following conversions:
 >Managing multiple files.
 
 >Use of "ar" in the Makefile, and the purpose of it.
->Variadic function
+
+>Variadic function.
+
 >Data structure.
+
 >Unary operator.
 
 ### What difficulties did I encounter?
