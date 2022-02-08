@@ -11,6 +11,7 @@ int		main( void )
 
 	ft_printf("The number is: %d\n", 1052 + 955212174 - 485745);
 	printf("The number is: %d\n", 1052 + 955212174 - 485745);
+	
 	return (0);
 }
 //gcc main.c -L. -lftprintf && ./a.out
