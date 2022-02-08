@@ -61,7 +61,7 @@ static int		ft_lst_printf(t_data data, const char *fmt, va_list args)
 	{
 		if (*fmt != '%')
 		{
-			ft_init_t_data(&data);
+			ft_init_t(&data);
 			ft_putchar((char)*fmt, data);
 			fmt++;
 			continue;
@@ -81,6 +81,8 @@ int				ft_printf(const char *fmt, ...)
 	ft_init_t_data(&data);
 	va_start(args, fmt);
 	*data.pt_count = ft_lst_printf(data, fmt, args);
+printf("printf = %d\n", 	*data.pt_count);
 	va_end(args);
+	printf("fin de printf = %d\n", data.count);
 	return (data.count);
 }
